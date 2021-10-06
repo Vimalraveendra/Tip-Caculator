@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --blue: #0d6efd;
+  --indigo: #6610f2;
+  --white: #fff;
+  --red: red;
+  --orange: orange;
+  --font-sm: 0.5em;
+  --font-ms: 0.75em;
+  --font-md: 1em;
+  --font-lg: 1.5em;
+  --font-xl: 2em;
+}
+
+input:focus {
+  outline: none;
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.main-section {
+  width: 400px;
+  height: 400px;
+  background-color: var(--red);
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+h1 {
+  margin-bottom: 5px;
+  text-align: center;
+  color: var(--white);
+}
+input {
+  height: 28px;
+}
