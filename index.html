@@ -10,19 +10,25 @@
     <main>
           <section class=" main-section">
               <h1>Tip Calculator </h1>
-              <label for="bill-amout">Bill Amount   </label>
-              <input type="text">
+              <label for="bill-amount">Bill Amount   </label>
+              <input type="text" id="bill-amount">
               <br>
               <label for="tip-percentage">Tip Percentage </label>
-              <input type="text">
+              <input type="text" id="tip-percentage">
               <br>
-              <label for="tip-amout">Tip Amount</label>
-              <input type="text" disabled>
+              <label for="tip-amount">Tip Amount</label>
+              <input type="text" disabled id="tip-amount">
               <br>
-              <label for="total-amout">TotalAmount</label>
-              <input type="text" disabled>
+              <label for="total-amount">TotalAmount</label>
+              <input type="text" disabled id="total-amount">
               <br>
+              <div>
+                <button id="calculate">Calculate</button>
+                <button id="reset">Reset</button>
+              </div>
+             
           </section>
     </main>
+    <script src="script.js"></script>
 </body>
 </html>

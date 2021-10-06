@@ -16,6 +16,19 @@
   --font-xl: 2em;
 }
 
+body {
+  background: #d3cce3; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #e9e4f0,
+    #d3cce3
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #e9e4f0,
+    #d3cce3
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
 input:focus {
   outline: none;
 }
@@ -27,11 +40,13 @@ main {
 }
 .main-section {
   width: 400px;
-  height: 400px;
+  height: auto;
   background-color: var(--red);
   display: flex;
   flex-direction: column;
   padding: 10px;
+  border-radius: 5px;
+  box-shadow: 1px 2px 10px 3px grey;
 }
 
 h1 {
@@ -41,4 +56,12 @@ h1 {
 }
 input {
   height: 28px;
+}
+button {
+  height: 28px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  width: 100px;
+  max-width: 100px;
 }
